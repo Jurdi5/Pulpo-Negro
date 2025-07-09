@@ -6,11 +6,38 @@ body {
 }
 /*Inicio*/
 .Inicio {
-  min-height: 50vh;
+  min-height: 120vh;
   padding-top: 0px;
   background-image: url(Pulpo.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   backdrop-filter: blur(6px);
+  display: flex;                
+  justify-content: center;     
+  align-items: center;       
+  text-align: center;          
+  color: white; 
+}
+.Inicio .content h1 {
+  font-size: 4rem;            
+  font-weight: 700;
+}
+/*Clientes*/
+.Clientes {
+  display: flex;
+  flex-direction: column;        
+  justify-content: center; 
+  align-items: center;       
+  text-align: center;
+  color: white;
+  min-height: 100vh;              
+  background-color: #111;        
+  padding: 2rem;                
+}
+/*Nuestras marcas*/
+.icono {
+  width: 32px;       
+  height: auto;
+  margin-right: 0.5rem;  
 }
