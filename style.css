@@ -6,23 +6,43 @@ body {
 }
 /*Inicio*/
 .Inicio {
-  min-height: 120vh;
-  padding-top: 0px;
-  background-image: url(Pulpo.png);
-  background-size: cover;
-  background-position: center;
+  min-height: 100vh;
+  padding: 0;
+  background-color: #111;
+  background-image: url('Pulpo-Negro.png'); /* Marca de agua */
   background-repeat: no-repeat;
-  backdrop-filter: blur(6px);
-  display: flex;                
-  justify-content: center;     
-  align-items: center;       
-  text-align: center;          
-  color: white; 
+  background-position: right center;
+  background-size: 40%; /* Ajusta según tamaño del pulpo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Poppins', sans-serif;
 }
+
 .Inicio .content h1 {
-  font-size: 4rem;            
-  font-weight: 700;
+  font-size: 2rem;
+  padding-top: 50px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
 }
+
+.Inicio .content h1 strong {
+  font-size: 3.2rem;
+  font-weight: 800;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.Inicio .compu {
+  max-width: 500px;
+  width: 90%;
+  height: auto;
+  margin-top: 1rem;
+}
+
 /*Clientes*/
 .Clientes {
   display: flex;
@@ -36,8 +56,130 @@ body {
   padding: 2rem;                
 }
 /*Nuestras marcas*/
-.icono {
-  width: 32px;       
+.Nuestras-Marcas{
+  display: flex;
+  flex-direction: column;        
+  justify-content: center; 
+  align-items: center;       
+  text-align: center;
+  color: black;
+  background-color: white;
+}
+.icono{
+  width: 150px;       
   height: auto;
   margin-right: 0.5rem;  
+}
+.Nuestras-Marcas .content p {
+  font-size: 1.5rem;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  grid-template-rows: repeat(2, 1fr); /* 2 filas */
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  height: 100%;
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.Nuestras-Marcas .content .contorno{
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 30px 0;
+}
+
+.logo-container img {
+  width: 300px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.logo-container img:hover {
+  transform: scale(1.1);
+}
+
+
+/*Servicios*/
+.Servicios {
+  padding-top: 200px;
+
+}
+
+.Servicios .content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.content-der {
+  flex: 1 1 40%;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-der img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.Servicios .content-izq{
+  flex: 1 1 50%;
+  min-width: 100px;
+}
+
+.linea-lista {
+  list-style: none;
+  padding-left: 0;
+  padding-top: 50px;
+  font-size: 1.5rem; 
+  font-weight: 900;   
+}
+
+.linea-lista li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.linea-lista li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  font-size: 1.5rem; 
+  font-weight: 900;   
+  color: white;
 }
