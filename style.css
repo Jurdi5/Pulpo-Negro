@@ -1,185 +1,331 @@
-/*Tipografia general*/
-body {
-  background-color: #111; 
-  color: white; 
-  font-family: 'Poppins', sans-serif;
-}
-/*Inicio*/
-.Inicio {
-  min-height: 100vh;
-  padding: 0;
-  background-color: #111;
-  background-image: url('Pulpo-Negro.png'); /* Marca de agua */
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 40%; /* Ajusta según tamaño del pulpo */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  font-family: 'Poppins', sans-serif;
-}
+*Tipografia general*/
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-.Inicio .content h1 {
-  font-size: 2rem;
-  padding-top: 50px;
-  font-weight: 300;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-}
+    body {
+      background-color: #111; 
+      color: white; 
+      font-family: 'Poppins', sans-serif;
+    }
 
-.Inicio .content h1 strong {
-  font-size: 3.2rem;
-  font-weight: 800;
-  display: block;
-  margin-top: 0.5rem;
-}
+    /*Inicio*/
+    .Inicio {
+      padding: 0;
+      background-color: #111;
+      background-image: url('Pulpo-Negro.png'); /* Placeholder para el pulpo */
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
 
-.Inicio .compu {
-  max-width: 500px;
-  width: 90%;
-  height: auto;
-  margin-top: 1rem;
-}
+    .Inicio .content {
+      max-width: 800px;
+      width: 100%;
+      padding: 2rem;
+    }
 
-/*Clientes*/
-.Clientes {
-  display: flex;
-  flex-direction: column;        
-  justify-content: center; 
-  align-items: center;       
-  text-align: center;
-  color: white;
-  min-height: 100vh;              
-  background-color: #111;        
-  padding: 2rem;                
-}
-/*Nuestras marcas*/
-.Nuestras-Marcas{
-  display: flex;
-  flex-direction: column;        
-  justify-content: center; 
-  align-items: center;       
-  text-align: center;
-  color: black;
-  background-color: white;
-}
-.icono{
-  width: 150px;       
-  height: auto;
-  margin-right: 0.5rem;  
-}
-.Nuestras-Marcas .content p {
-  font-size: 1.5rem;
-}
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-  grid-template-rows: repeat(2, 1fr); /* 2 filas */
-  gap: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
+    .Inicio .content h1 {
+      font-size: 5rem;
+      padding-top: 50px;
+      font-weight: 300;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
 
-.card {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  height: 100%;
-}
-.card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-.card:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
-}
+    .Inicio .content h1 span {
+      font-size: 2rem;
+      font-weight: 300;
+    }
 
-.Nuestras-Marcas .content .contorno{
-  color: white;
-  text-align: center;
-  margin-bottom: 30px;
-  text-shadow:
-    -1px -1px 0 black,
-     1px -1px 0 black,
-    -1px  1px 0 black,
-     1px  1px 0 black;
-}
-.logo-container {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin: 30px 0;
-}
+    .Inicio .content h1 strong {
+      font-size: 3.2rem;
+      font-weight: 800;
+      display: block;
+      margin-top: 0.5rem;
+    }
 
-.logo-container img {
-  width: 300px;
-  height: auto;
-  transition: transform 0.3s;
-}
+    .Inicio .compu {
+      width: 500px;
+      height: auto;
+      margin-top: 2rem;
+    }
 
-.logo-container img:hover {
-  transform: scale(1.1);
-}
+    /*Clientes*/
+    .Clientes {
+      display: flex;
+      flex-direction: column;        
+      justify-content: center; 
+      align-items: center;       
+      text-align: center;
+      color: white;
+      min-height: 60vh;              
+      background-color: #111;        
+      padding: 4rem 2rem;                
+    }
 
+    .Clientes .content {
+      max-width: 1200px;
+      width: 100%;
+    }
 
-/*Servicios*/
-.Servicios {
-  padding-top: 200px;
+    .Clientes h1 {
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      font-weight: 600;
+    }
 
-}
+    /*Nuestras marcas*/
+    .Nuestras-Marcas {
+      background-color: white;
+      color: black;
+      padding: 4rem 2rem;
+    }
 
-.Servicios .content {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 40px;
-}
+    .Nuestras-Marcas .content {
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
 
-.content-der {
-  flex: 1 1 40%;
-  min-width: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    .Nuestras-Marcas .content h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      font-weight: 700;
+    }
 
-.content-der img {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 10px;
-}
+    .icono {
+      width: 60px;       
+      height: auto;
+      margin: 0 0.5rem;
+      vertical-align: middle;
+    }
 
-.Servicios .content-izq{
-  flex: 1 1 50%;
-  min-width: 100px;
-}
+    .Nuestras-Marcas .content p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 3rem;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-.linea-lista {
-  list-style: none;
-  padding-left: 0;
-  padding-top: 50px;
-  font-size: 1.5rem; 
-  font-weight: 900;   
-}
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto 4rem auto;
+    }
 
-.linea-lista li {
-  position: relative;
-  padding-left: 20px;
-  margin-bottom: 10px;
-}
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      height: 200px;
+      transition: transform 0.3s ease;
+    }
 
-.linea-lista li::before {
-  content: "—";
-  position: absolute;
-  left: 0;
-  font-size: 1.5rem; 
-  font-weight: 900;   
-  color: white;
-}
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .Nuestras-Marcas .content .contorno {
+      color: white;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-shadow:
+        -2px -2px 0 black,
+         2px -2px 0 black,
+        -2px  2px 0 black,
+         2px  2px 0 black;
+    }
+
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      margin: 30px 0;
+      flex-wrap: wrap;
+    }
+
+    .logo-container img {
+      width: 200px;
+      height: auto;
+      transition: transform 0.3s;
+    }
+
+    .logo-container img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Servicios */
+    .Servicios {
+      padding: 100px 50px;
+      min-height: 100vh;
+      background-color: #111;
+    }
+
+    .Servicios .content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .content-izq {
+      flex: 1 1 55%;
+      min-width: 300px;
+    }
+
+    .content-S h1 {
+      font-size: 3.5rem;
+      font-weight: 900;
+      margin-bottom: 30px;
+      letter-spacing: 2px;
+      color: white;
+    }
+
+    .content-izq > h1 {
+      font-size: 2rem;
+      font-weight: 300;
+      margin-bottom: 30px;
+      color: #ccc;
+    }
+
+    .content-der {
+      flex: 1 1 40%;
+      min-width: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .content-der img {
+      width: 1000px;
+      height: 900px;
+      object-fit: fill;
+      border-radius: 10px;
+    }
+
+    .linea-lista {
+      list-style: none;
+      padding-left: 0;
+      font-size: 1.3rem;
+      font-weight: 400;
+      line-height: 1.8;
+    }
+
+    .linea-lista li {
+      position: relative;
+      padding-left: 25px;
+      margin-bottom: 12px;
+      color: #fff;
+    }
+
+    .linea-lista li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: white;
+      top: -2px;
+    }
+
+    /* Sublista anidada */
+    .linea-lista ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+
+    .linea-lista ul li {
+      font-size: 1.1rem;
+      color: #ccc;
+      margin-bottom: 8px;
+    }
+
+    .linea-lista ul li::before {
+      content: "—";
+      font-size: 1.2rem;
+      color: #888;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .Inicio .content h1 {
+        font-size: 1.5rem;
+      }
+      
+      .Inicio .content h1 strong {
+        font-size: 2.5rem;
+      }
+
+      .Clientes h1 {
+        font-size: 2rem;
+      }
+
+      .Nuestras-Marcas .content h1 {
+        font-size: 2rem;
+      }
+
+      .Nuestras-Marcas .content p {
+        font-size: 1rem;
+      }
+
+      .card-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      }
+
+      .logo-container {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .logo-container img {
+        width: 150px;
+      }
+
+      .Servicios {
+        padding: 50px 20px;
+      }
+      
+      .Servicios .content {
+        flex-direction: column;
+        gap: 30px;
+      }
+            
+      .content-S h1 {
+        font-size: 2.5rem;
+      }
+            
+      .content-izq > h1 {
+        font-size: 1.5rem;
+      }
+            
+      .linea-lista {
+        font-size: 1.1rem;
+      }
+    }
